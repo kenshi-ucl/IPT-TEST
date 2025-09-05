@@ -1,0 +1,4 @@
+$models = @("AuditLog", "Course", "Faculty", "Department", "FacultyCourse", "Student", "User", "StudentCourse", "Evaluation")
+foreach ($model in $models) { 
+    php artisan make:model $model --api
+}
